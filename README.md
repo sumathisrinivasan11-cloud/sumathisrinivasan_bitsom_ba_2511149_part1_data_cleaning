@@ -118,7 +118,7 @@ outputs/cleaned_orders.xlsx
 Based on `outputs/data_quality_report.xlsx`:
 
 - **Missing values:** Found in date fields, region, ship_mode  
-- **Invalid discounts:** Negative or > 0.8  
+- **Invalid discounts:** Negative or > 0.5  
 - **Date issues:** Missing dates, invalid formats, ship-before-order  
 - **Duplicate issues:**  
   - Exact duplicates removed  
@@ -162,8 +162,6 @@ Generated in `outputs/pivot_summary.xlsx`:
 ---
 
 ## **8. Key Business Insights**
-*(These are examples — you can refine them after reviewing your actual pivot outputs.)*
-
 - Certain regions consistently outperform others in both sales and profit.  
 - Some product sub‑categories contribute disproportionately to total profit.  
 - A few regions show high refund/cancellation rates, indicating operational inefficiencies.  
@@ -173,7 +171,7 @@ Generated in `outputs/pivot_summary.xlsx`:
 ---
 
 ## **9. Assumptions and Limitations**
-- Discount validity assumed to be between **0 and 0.8**.  
+- Discount validity assumed to be between **0 and 0.5**.  
 - Sales mismatch threshold set to **0.01** due to rounding.  
 - Some ambiguous records were flagged but not corrected.  
 - Pivot tables are based on cleaned data; Excel screenshots required for final submission.  
@@ -188,8 +186,8 @@ The following screenshots must be included in the `screenshots/` folder:
 |-----------------|-----------|
 | `raw_data_preview.png` | Raw dataset before cleaning |
 | `cleaned_data_preview.png` | Cleaned dataset with calculated columns |
-| `pivot_summary_1.png` | Any major pivot summary |
-| `pivot_summary_2.png` | Another major pivot summary |
+| `pivot_summary_1.png` | Sales and profit by region |
+| `pivot_summary_2.png` | Sales and profit by category and sub-category |
 
 ---
 
